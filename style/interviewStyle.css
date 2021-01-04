@@ -1,0 +1,109 @@
+main h1, main h2, main h3, main h4, main h5, main p, main a {
+    color: #393e41;
+}
+
+main h1, main h3 {
+    color: #674ea7;
+}
+
+.orangeTitle {
+    color: #e69138;
+}
+
+main {
+    height: auto;
+    width: 100%;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+main>div {
+    height: auto;
+    width: 92%;
+    margin: 2.5%;
+    margin-top: 0;
+    padding: 2%;
+    padding-top: 15vh;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+
+    border-radius: 10px;
+    background-color: #E0E0E0;  
+}
+
+main>div * {
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+main>div img {
+    width: 25%;
+    height: auto;
+}
+
+main>div img:hover {
+    transform: scale(1.15);
+    transition: transform 0.5s;
+}
+
+main>div img:not(:hover) {
+    transform: scale(1);
+    transition: transform 0.5s;
+}
+
+.separator {
+    padding: 0.3em;
+    background-color: #674ea7;
+    border-radius: 10px;
+}
+
+main>a {
+    margin: 0;
+    margin-bottom: 2%;
+    padding: 3%;
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
+
+    border: 5px solid #1c9dd9e3;
+}
+
+main>a:hover {
+    background-color: #1c9dd9e3;
+    transition: background-color 0.5s;
+}
+
+main>a:not(:hover) {
+    background-color: unset;
+    transition: background-color 0.5s;
+}
+
+main>a h3 {
+    margin: 0;
+    padding: 0;
+    color: #E0E0E0;
+}
+
+@media screen and (max-width: 1024px) and (min-width: 600px) {
+    main>div img {
+        width: 35%;
+    }
+
+    main>a {
+        border-width: 4px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    main>div img {
+        width: 50%;
+    }
+
+    main>a {
+        border-width: 3px;
+    }
+}

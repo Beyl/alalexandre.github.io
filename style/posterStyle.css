@@ -1,0 +1,99 @@
+main h1 {
+    color: #393E41;
+}
+
+main {
+    width: 92%;
+    height: auto;
+    margin-left: 4%;
+    margin-right: 4%;
+    margin-top: 0%;
+    padding-top: 10vh;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+main div {
+    width: 50%;
+    height: 16%;
+    margin: 2%;
+    margin-top: 0;
+    padding-bottom: 2%;
+    border-radius: 10px;
+    background-color: #E0E0E0;
+}
+
+main div img {
+    width: 70%;
+    height: auto;
+    margin-top: 5%;
+}
+
+main div img:hover {
+    transform: scale(1.15);
+    transition: transform 0.5s;
+}
+
+main div img:not(:hover) {
+    transform: scale(1);
+    transition: transform 0.5s;
+}
+
+main a {
+    width: 100%;
+    height: auto;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+main a img {
+    width: 25vw;
+    height: auto;
+    padding: 0;
+    padding-left: 3%;
+    padding-right: 3%;
+    margin: 1%;
+}
+
+main a img:hover {
+    transform: scale(1.15);
+    transition: transform 0.5s;
+}
+
+main a img:not(:hover) {
+    transform: scale(1);
+    transition: transform 0.5s;
+}
+
+@media screen and (max-width: 1024px) and (min-width: 600px) {
+    main a img {
+        width: 28vw;
+        border-width: 4px;
+    }
+
+    main h1 {
+        font-size: 1.5em;
+    }
+
+    main div {
+        width: 65%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    main a img {
+        width: 36vw;
+        border-width: 3px;
+    }
+
+    main h1 {
+        font-size: large;
+    }
+
+    main div {
+        width: 80%;
+    }
+}

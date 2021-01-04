@@ -1,0 +1,318 @@
+main {
+    width: 95%;
+    height: auto;
+    margin: 0;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    padding: 0;
+    padding-top: 12vh;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+}
+
+#cvHeader {
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+
+    border-radius: 12px;
+    border: solid 5px #393E41;
+    background-color: #1c9dd9;
+}
+
+#cvHeader>img {
+    width: 23%;
+    height: auto;
+    margin: 1%;
+}
+
+#cvHeader>img:hover {
+    transform: scale(1.15);
+    transition: transform 0.5s;
+}
+
+#cvHeader>img:not(:hover) {
+    transform: scale(1);
+    transition: transform 0.5s;
+}
+
+#name {
+    width: 23%;
+    height: auto;
+    margin: 1%;
+    padding-left: 1%;
+
+    border-top: solid 7px #393E41;
+    border-bottom: solid 7px #393E41;
+}
+
+#cvContacts {
+    width: 48%;
+    height: auto;
+    margin: 1%;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+}
+
+#cvContacts>a {
+    width: 96%;
+    height: 18%;
+    margin: 1%;
+    margin-left: 2%;
+    margin-right: 2%;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#cvContacts>a:nth-child(2n+1) {
+    background-color: #393E41;
+    border-radius: 10px;
+}
+
+#cvContacts>a:hover {
+    transform: scale(1.15);
+    transition: transform 0.5s;
+}
+
+#cvContacts>a:not(:hover) {
+    transform: scale(1);
+    transition: transform 0.5s;
+}
+
+#cvContacts>a>img {
+    width: 7.5%;
+    height: auto;
+    margin: 1%;
+    margin-left: 2%;
+}
+
+#cvContacts>a>p {
+    font-size: smaller;
+}
+
+#cvMain {
+    width: 94%;
+    height: auto;
+    margin: 2%;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+
+    border-radius: 12px;
+    border: solid 5px #1c9dd9;
+    background-color: #393E41;
+}
+
+#cvMain h2 {
+    margin-bottom: 1%;
+    padding-left: 1%;
+
+    border-bottom: solid 0.2em #1c9dd9;
+}
+
+#cvMain>div {
+    width: 46%;
+    height: auto;
+    margin: 2%;
+}
+
+#cvMain>div>div {
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+}
+
+#profile p {
+    margin-bottom: 5%;
+    padding-left: 1%;
+}
+
+#centerOfInterests div:nth-child(2n+1) {
+    padding: 2%;
+    background-color: #1c9dd9;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    margin-top: 5%;
+}
+
+#centerOfInterests p {
+    padding-left: 1%;
+}
+
+#cvMain img {
+    width: 60%;
+    height: auto;
+    margin: 2%;
+    margin-left: 5%;
+}
+
+#cvMain img:hover {
+    transform: scale(1.25);
+    transition: transform 0.5s;
+}
+
+#cvMain img:not(:hover) {
+    transform: scale(1);
+    transition: transform 0.5s;
+}
+
+#professionnal>div * {
+    padding-left: 1%;
+}
+
+#professionnal a:hover {
+    font-size: 1.15em;
+    transition: font-size 0.5s;
+}
+
+#professionnal a:not(:hover) {
+    font-size: 1em;
+    transition: font-size 0.5s;
+}
+
+#professionnal img {
+    width: 60%;
+}
+
+#personalExperiences>div:nth-child(2n) {
+    margin-top: 2%;
+    padding: 1%;
+    border-radius: 10px;
+    background-color: #1c9dd9;
+}
+
+#skills>div {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+#skills>div>div {
+    width: 36%;
+    height: auto;
+    margin: 2%;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+.bgBlue {
+    padding: 3%;
+    background-color: #1c9dd9;
+    border-radius: 10px;
+}
+
+#skills img {
+    width: 40%;
+    height: auto;
+}
+
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+    #cvHeader {
+        flex-wrap: wrap;
+    }
+
+    #name {
+        width: 53%;
+        text-align: center;
+    }
+
+    #cvContacts {
+        width: 100%;
+        margin-top: 2%;
+
+        flex-flow: row wrap;
+        align-items: center;
+    }
+
+    #cvContacts>a {
+        height: auto;
+        width: 48%;
+        margin: 1%;
+        flex-direction: row-reverse;
+    }
+
+    #cvContacts>a>img {
+        width: 12%;
+        height: auto;
+        margin: 2%;
+        margin-right: 4%;
+    }
+
+    #cvMain img {
+        width: 65%;
+    }
+
+    #personalExperiences>div img {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #cvHeader {
+        flex-direction: column;
+    }
+
+    #cvHeader>img {
+        width: 50%;
+        height: auto;
+        margin: 4%;
+    }
+
+    #name {
+        width: 75%;
+        text-align: center;
+    }
+
+    #cvContacts {
+        width: 100%;
+    }
+
+    #cvContacts>a {
+        flex-direction: column-reverse;
+        margin: 2%;
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;
+    }
+
+    #cvContacts>a:nth-child(2n+1) {
+        border-radius: 0px;
+    }
+
+    #cvContacts>a>img {
+        width: 12%;
+    }
+
+    #cvMain {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    #cvMain>div {
+        width: 90%;
+    }
+
+    #cvMain img {
+        width: 70%;
+    }
+}
