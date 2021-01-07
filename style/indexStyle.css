@@ -22,7 +22,22 @@ main section {
     text-align: center;
 }
 
-main section>h2 {
+main section>a {
+    width: 100%;
+    height: auto;
+}
+
+main section>a>h2:hover {
+    background-color: #1c9dd9e3;
+    transition: background-color 0.5s;
+}
+
+main section>a>h2:not(:hover) {
+    background-color: #E0E0E0;
+    transition: background-color 0.5s;
+}
+
+main section>a>h2 {
     color: #393e41;
     background-color: #E0E0E0;
     padding: 4%;

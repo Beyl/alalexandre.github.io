@@ -80,6 +80,11 @@ main {
     border-radius: 10px;
 }
 
+#cvContacts>a:nth-child(2n) {
+    background-color: #1c9dd9;
+    border-radius: 10px;
+}
+
 #cvContacts>a:hover {
     transform: scale(1.15);
     transition: transform 0.5s;
@@ -154,6 +159,17 @@ main {
     padding-left: 1%;
 }
 
+#cvMain a:hover {
+    border-bottom: 0.1em solid #E0E0E0;
+    font-size: 1.1em;
+    transition: font-size 0.5s;
+}
+
+#cvMain a:not(:hover) {
+    font-size: 1em;
+    transition: font-size 0.5s;
+}
+
 #cvMain img {
     width: 60%;
     height: auto;
@@ -173,16 +189,6 @@ main {
 
 #professionnal>div * {
     padding-left: 1%;
-}
-
-#professionnal a:hover {
-    font-size: 1.15em;
-    transition: font-size 0.5s;
-}
-
-#professionnal a:not(:hover) {
-    font-size: 1em;
-    transition: font-size 0.5s;
 }
 
 #professionnal img {
@@ -245,8 +251,8 @@ main {
 
     #cvContacts>a {
         height: auto;
-        width: 48%;
-        margin: 1%;
+        width: 45%;
+        margin: 2.5%;
         flex-direction: row-reverse;
     }
 
@@ -284,6 +290,7 @@ main {
 
     #cvContacts {
         width: 100%;
+        text-align: center;
     }
 
     #cvContacts>a {
